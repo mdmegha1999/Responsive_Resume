@@ -1,0 +1,188 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+} */
+.main-content {
+    /* min-height: 1000px; */
+    width: 100%;
+    /* grid-template-rows: 20% 80%; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.left-section {
+  /* grid-area: 4/4/3/2; */
+  padding: 1rem;
+  grid-column: span 1;
+  background-color: rgb(23, 41, 41);
+  color: azure;
+}
+.right-section {
+  /* grid-area: 4/4/3/2; */
+  grid-column: span 1 / span 2;
+  background-color: rgb(168, 227, 227);
+  color: rgb(5, 5, 5);
+}
+.profile-image {
+  padding: 1rem;
+  display: block;
+  margin: auto;
+  border: 5px white solid;
+  border-radius: 30%;
+  width: 60%;
+}
+.name {
+  font-size: 1.2rem;
+  width: 700;
+  text-align: center;
+  white-space: 0.02px;
+  letter-spacing: 0.8rem;
+  padding: 0.8rem;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  bottom: 0.5rem;
+}
+.description {
+  font-size: 0.7;
+  text-align: center;
+  padding: 1rem;
+}
+
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 0.65rem;
+  width: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.progress-bar {
+  border: 1px white solid;
+  height: 4px;
+}
+
+.right-main-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.right-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.projects-contant {
+  padding: 0.5rem;
+}
+.projects-contant:hover{
+ background-color: rgb(185, 237, 237);
+}
+.education-contant {
+  padding: 0.5rem;
+}
+.education-contant:hover{
+  background-color: rgb(185, 237, 237);
+ }
+.experience-contant{
+  padding: 0.5rem;
+}
+.experience-contant:hover{
+  background-color: rgb(185, 237, 237);
+ }
+.para {
+  padding: 0.5rem;
+}
+.para:hover{
+  background-color: rgb(185, 237, 237);
+}
+
+h6 {
+  text-align: end;
+  display: grid;
+}
+a {
+  text-align: end;
+  display: grid;
+}
+
+.icon {
+  display: block;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  /* margin-top: 10vh; */
+  /* margin-top: -40px; 
+    margin-right: 50px; */
+  margin: 10px;
+}
+
+
+/* new code */
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eduContainer {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  /* background-color: gray; */
+}
+
+.eduDateAndCGPA {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background-color: blue; */
+}
+.eduDateAndCGPA h6 {
+  margin-top: 0;
+}
+
+/* for responsiveness */
+@media screen and (max-width: 630px) {
+    .main-content {
+     grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 673px) {
+    .main-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+  .main-content {
+    grid-template-columns: 100%;
+   
+  }
+}
+/* .main-content{
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+    grid-template-columns: 300px 700px;
+} */
+
+
